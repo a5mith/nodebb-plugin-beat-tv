@@ -1,0 +1,14 @@
+{
+	"id": "nodebb-plugin-beat-tv",
+	"name": "NodeBB Be-At.TV Plugin",
+	"description": "NodeBB Plugin that allows users to embed be-at sessions, events and streams inline in their posts.",
+	"url": "https://github.com/a5mith/nodebb-plugin-beat-tv",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+	],
+	"staticDirs": {
+        "css": "./static"
+    }
+
+}
